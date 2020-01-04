@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package ratelimitter;
+
+service RateLimitService{
+ rpc    ShouldRateLimit(RateLimitRequest) returns (RateLimitResponse) {}
+}
+
+message RateLimitRequest{
+ string UserID = 1;
+ int32  PerMinuteLimit = 2;
+}
+
+message RateLimitResponse{
+ int32  CurMinuteCounter = 1;
+ bool   ExceededLimit    = 2;
+}
