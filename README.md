@@ -10,7 +10,7 @@ ratelimitter is a simple ratelimiting imlementation, utilizing redis as its data
 ```
 $ git clone git@github.com:bazulay/ratelimitter.git
 $ cd ratelimiter.git
-$ 
+```
 
 ## Run
 Runnin & testing/using the system localy is done in 3 steps
